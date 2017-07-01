@@ -1,0 +1,19 @@
+
+.form-create-auction {
+    background-color: #d3d3d3;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.form-create-auction h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+table td {
+    padding: 5px;
+}
+
+table thead {
+    font-weight: bold;
+}
