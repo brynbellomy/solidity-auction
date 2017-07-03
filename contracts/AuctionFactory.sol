@@ -20,15 +20,4 @@ contract AuctionFactory {
     function allAuctions() constant returns (address[]) {
         return auctions;
     }
-
-    function testConstantFunc() constant returns (uint) {
-        return 888;
-    }
-
-    uint blah = 900;
-
-    function testMutatingFunc() returns (uint) {
-        blah += 1;
-        return blah;
-    }
 }

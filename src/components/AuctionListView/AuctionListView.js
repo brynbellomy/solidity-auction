@@ -41,14 +41,6 @@ class AuctionListView extends Component
             this.props.web3.eth.getAccounts((err, accounts) => {
                 this.setState({ accounts })
                 this.setCurrentAccount(accounts[0])
-
-                // AuctionFactory.deployed().testConstantFunc().then(x => console.log('aaa ~>', x))
-                // AuctionFactory.deployed().testConstantFunc.call().then(x => console.log('bbb ~>', x))
-                // AuctionFactory.deployed().testConstantFunc.sendTransaction({ from: accounts[0] }).then(x => console.log('ccc ~>', x))
-
-                AuctionFactory.deployed().testMutatingFunc().then(x => console.log('aaa ~>', x))
-                AuctionFactory.deployed().testMutatingFunc.call().then(x => console.log('bbb ~>', x))
-                AuctionFactory.deployed().testMutatingFunc.sendTransaction({ from: accounts[0] }).then(x => console.log('ccc ~>', x))
             })
         })
 
